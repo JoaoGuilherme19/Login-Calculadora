@@ -1,0 +1,126 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #0005;
+    justify-content: space-around;
+    align-items: center;
+    h1{
+        margin: 0;
+        padding: 5px;
+        color: #be1c2e;
+    }
+    .material-symbols-outlined{
+        color: #fff;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        height: 0px;
+        width: 100%;
+        top: 50px;
+        position: absolute;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0005;
+        overflow: hidden;
+        transition: .5s;
+            li{
+                cursor: pointer;
+                color: #fff;
+                text-align: center;
+                margin: 5px;
+                
+            &:hover a{
+                background-color: #be1c2e;
+            }
+                a{  
+                    border-radius: 10px;
+                    padding: 5px 35px;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+
+    input{
+        position: absolute;
+        display: block;
+        opacity: 0;
+    }
+    input:focus ~ ul {
+        height: 50px;
+    }
+}
+h2{
+    color: #fff;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding: 25px 20px 50px 20px;
+    border-radius: 15px;
+    border-right: 1px solid #fff5;
+    border-top: 1px solid #fff5;
+    box-shadow: -5px 5px 10px #0005;
+    h1{
+        margin: 40px;
+        margin-top: 0;
+        color: #fff;
+    }
+    
+    label{
+        color: #fff5;
+        font-weight: 600;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        transition: .3s;
+        cursor: text;
+        opacity: 1;
+    }
+    .form-input{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    input{
+        padding: 5px;
+        margin: 10px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        border-bottom: 1px solid #666;
+        &:focus ~ label {
+            top: -10px;
+            cursor: default;
+            color: #085fa1;
+        }
+        &:valid {
+            background-color: transparent;
+        }
+        &:valid ~ label {
+            opacity: 0;
+        }
+    }
+    button{
+        background-color: #ccc;
+        width: 100px;
+        padding: 5px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover{
+            background-color: #fff;
+    
+        }
+    }
+}
