@@ -5,20 +5,25 @@ import Tilt from 'react-parallax-tilt';
 function LoginPage() {
 
 
-  const handleSubmit = (e) => {
+  function handleSubmit (e) {
     e.preventDefault();
+    var logged;
     const email = e.target.children[2].children[0].value
     const senha = e.target.children[3].children[0].value
     if (email === 'admin@admin' && senha === '321321') {
       console.log(email,senha);
       e.target.children[1].textContent = ''
       window.location.href = "/boxes";
+      logged = true
       return
-    } else {
+    }
+    if (logged === undefined) {
+      e.preventDefault();
       e.target.children[1].textContent = 'Email ou Senha incorreta!'
     }
-  }
+    console.log(logged);
 
+  }
 
     return(
         <Tilt>
