@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import './calculator.css'
 import Tilt from 'react-parallax-tilt';
 
-
 const Home = () => {
     const [num, setNum] = useState(0)
     const [operator, setOperator] = useState()
@@ -11,9 +10,6 @@ const Home = () => {
     const [variable, setV] = useState()
     const [sign, setSign] = useState()
     const [oldVariable, setO] = useState()
-
-    
-
 
     const getNum = (e) => {
         const input = e.target.firstChild.textContent
@@ -76,8 +72,6 @@ const Home = () => {
         console.log(num)
 
     }
-
-
 
     return (
         <Tilt>

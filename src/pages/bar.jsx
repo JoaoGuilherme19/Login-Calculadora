@@ -7,8 +7,7 @@ function Bar() {
         const bar = e.target.offsetParent.firstChild.children[0]
         const qtd = (barraAtual * 100) / barraMax
         bar.style.width = `${qtd}%`
-
-        
+ 
         console.log(qtd);
     }
 
@@ -63,5 +62,4 @@ function Bar() {
 
     )
 }
-
 export default Bar

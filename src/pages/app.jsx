@@ -27,7 +27,6 @@ function App() {
               <Route path="/home"  element={<Home />}/>
 
               <Route path="/boxes" element={<BoxesPage />}/>
-              
 
               <Route path="/bar" element={<Bar />}/>
 
