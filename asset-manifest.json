@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Login-Calculadora/static/css/main.e545b5d8.css",
+    "main.js": "/Login-Calculadora/static/js/main.895f9616.js",
+    "static/media/gradientBackground.jpg": "/Login-Calculadora/static/media/gradientBackground.f972d844dc4255d99e89.jpg",
+    "index.html": "/Login-Calculadora/index.html",
+    "main.e545b5d8.css.map": "/Login-Calculadora/static/css/main.e545b5d8.css.map",
+    "main.895f9616.js.map": "/Login-Calculadora/static/js/main.895f9616.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e545b5d8.css",
+    "static/js/main.895f9616.js"
+  ]
+}
