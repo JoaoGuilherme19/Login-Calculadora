@@ -29,6 +29,7 @@ function LoginPage() {
         <Tilt>
               <form className="form-group" onSubmit={handleSubmit}>
               <h1>Login Page</h1>
+              <p>LOGIN: admin@admin SENHA:321321</p>
               <h2></h2>
                 <div className="form-input">
                   <input required 
